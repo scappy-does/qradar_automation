@@ -8,7 +8,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 def get_offense_details(offense_id):
     api_key = os.getenv('QRADAR_API_KEY')
-    url = f'https://192.168.100.100/api/siem/offenses/{offense_id}'
+    url = f'<QRADAR URL>/api/siem/offenses/{offense_id}'
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
