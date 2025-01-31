@@ -8,7 +8,7 @@ import os
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 api_key = os.getenv('QRADAR_API_KEY')
-url = 'https://192.168.100.100/api/siem/offenses'
+url = '<QRADAR URL>/api/siem/offenses'
 headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
